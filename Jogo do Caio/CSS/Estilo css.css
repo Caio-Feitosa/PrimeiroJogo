@@ -1,0 +1,57 @@
+﻿body{
+	font-family: 'Press Start 2P', cursive;
+}
+
+#painel{
+	width: 600px;
+	position: absolute;
+	margin-left: -300px;
+	left: 50%;
+	background-image: linear-gradient(#FFA500, #F0E68C);
+	padding-left: 10px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	border-radius: 7px;
+}
+
+h1{
+	font-size: 25px;
+	padding-left: 17px;
+}
+
+a{
+	color: red;
+   	text-decoration: none;
+   	font-size: 20px;
+}
+
+body div img{
+	width: 100%;
+	margin-left: 17px;
+}
+
+div{
+
+}
+
+#play{
+	width: 120px;
+	position: relative;
+	left: 50%;
+	margin-left: -63px;
+	margin-top: 363px;
+}
+
+section{
+	display: inline-block;
+	margin-right: 50px;
+}
+
+img{
+	margin: 3px;
+}
+
+#button{
+	font-family: 'Press Start 2P', cursive;
+	padding: 3px;
+}

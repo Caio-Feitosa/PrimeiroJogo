@@ -1,0 +1,72 @@
+﻿<!doctype html>
+
+<html>
+  <head>
+     <meta charset = "utf-8" />
+     <title>Pedra, Papel e Tesoura - Início</title>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+     </style>
+     <link rel="stylesheet" type="text/css" href="CSS/Estilo css - jogo.css">
+     <script type="text/javascript" src="JavaScript/Script_jogo.js"></script>
+  </head>
+
+  <body onload="preload()">
+      <div id="main">
+          <div id="DIVprincipal">
+              <header>
+                  <h1>Pedra, Papel e Tesoura</h1>
+              </header>
+
+              <section onmouseout="limpa()" id="Jogador">
+                  <h2>Jogador</h2>
+                  <img id="pedraj" src="Images/Pedra - pixel.png" alt="Pedra" onmouseover="trocaImagem(this, 1)" onclick="clicado(this, 1)">
+                  <img id="papelj" src="Images/Papel - pixel.png" alt="Papel" onmouseover="trocaImagem(this, 2)" onclick="clicado(this, 2)">
+                  <img id="tesouraj" src="Images/Tesoura - pixel.png" alt="Tesoura" onmouseover="trocaImagem(this, 3)" onclick="clicado(this, 3)">
+              </section>
+
+              <section id="Computador">
+                  <h2>Computador</h2>
+                  <img id="pedrac" src="Images/Pedra - pixel.png" alt="Pedra">
+                  <img id="papelc" src="Images/Papel - pixel.png" alt="Papel">
+                  <img id="tesourac" src="Images/Tesoura - pixel.png" alt="Tesoura">
+              </section>
+
+              <object id="Logo" data="Images/Logo-Caio-preferida.svg" type="image/svg+xml"></object>
+
+              <form id="Placar">
+                  <label id="PointJog">0</label>
+                  <label id="Versus">x</label>
+                  <label id="PointComp">0</label>
+              </form>
+
+              <img class="ImagemFinal" id="venceuIMG" src="Images/Venceu.png" style="display:none">
+              <img class="ImagemFinal" id="perdeuIMG" src="Images/Perdeu.png" style="display:none">
+
+              <audio id="VitorySound" id="perdeuIMG" src="Sounds/Win sound.mp3" preload>
+                  <span>Seu navegador não suporta o elemento áudio.</span>
+              </audio>
+              <audio id="LoseSound" src="Sounds/Lose sound.mp3" preload>
+                  <span>Seu navegador não suporta o elemento áudio.</span>
+              </audio>
+              <audio id="somMudanca" src="Sounds/Mudanca.mp3" preload>
+                  <span>Seu navegador não suporta o elemento áudio.</span>
+              </audio>
+              <audio id="somClick" src="Sounds/Click.mp3">
+                  <span>Seu navegador não suporta o elemento áudio.</span>
+              </audio>
+
+              <label id="info">Melhor de três</label>
+
+          </div>
+          <div id="DIVsecundaria"> <!-- Apenas por causa do fundo branco dos botões-->
+              <img id="Pronto" src="Images/Pronto apagado.png
+          " alt="Pronto" onclick="operacaoDoJogo()" onmouseover="buttonProntoSelecionado()" onmouseout="mudaButtonPronto()">
+              <img id="Reiniciar" src="Images/Reiniciar apagado.png
+          " alt="Reiniciar" onclick="reiniciaJogo()" onmouseover="buttonReiniciarSelecionado()" onmouseout="mudaButtonReiniciar()">
+          </div>
+      </div>
+          
+  </body>
+
+</html>

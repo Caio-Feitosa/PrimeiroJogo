@@ -1,0 +1,99 @@
+﻿body{
+	font-family: 'Press Start 2P', cursive;
+}
+
+#DIVprincipal{
+	margin-top: 10px;
+	border-radius: 7px;
+	background-color: #87CEFA;
+}
+
+section{
+	display: inline-block;
+	margin-left: 34px;
+	background-color: #FFF;
+	padding-bottom: 12px;
+	margin-top: 12px;
+	border: 5px solid #6495ED;
+	border-radius: 10px;
+}
+
+#Jogador img, #DIVsecundaria img{
+	cursor: pointer;
+}
+
+#Logo{
+	width: 45px;
+	position: absolute;
+	left: 280px;
+	top: 90px;
+}
+
+h1{
+	font-size: 25px;
+	padding-left: 90px;
+	margin-top: 27px;
+}
+
+#Jogador h2{
+	padding-left: 60px;
+	margin-bottom: 20px;
+}
+
+#Computador h2{
+	padding-left: 27px;
+	margin-bottom: 20px;
+}
+
+div{
+	left: 50%;
+	width: 720px;
+	position: absolute;
+	margin-left: -360px;
+}
+
+#DIVsecundaria{
+	margin-top: 435px;
+}
+
+#Pronto{
+	margin-left: 110px;
+	width: 150px;
+}
+
+#Reiniciar{
+	margin-left: 180px;
+	width: 150px;
+}
+
+#PointJog, #PointComp, #Versus{
+	font-family: 'VT323', cursive;
+	font-size: 110px;
+	color: #fff;
+}
+
+#PointJog{
+	margin-left: 164px;
+}
+
+#Versus{
+	margin-left: 113px;
+}
+
+#PointComp{
+	margin-left: 120px;
+}
+
+.ImagemFinal{
+	position: absolute;
+	width: 500px;
+	left: 110px;
+	top: 120px;
+}
+
+#info{
+	margin: 10px 35px;
+	font-size: 12px;
+	float: right;
+	color: #4682B4;
+}
